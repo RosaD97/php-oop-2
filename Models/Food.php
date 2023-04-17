@@ -2,10 +2,10 @@
 
 class Food extends Product
 {
-    private $peso;
-    private $ingradients;
+    public $peso;
+    public $ingredients;
 
-    public function __construct(string $_name, int $_price, string $_category, int $_peso, string $_ingredients)
+    public function __construct(string $_name, int $_price, string $_category, int $_peso, array $_ingredients)
     {
         parent::__construct($_name, $_price, $_category);
         $this->set_info($_peso, $_ingredients);
@@ -13,6 +13,6 @@ class Food extends Product
     public function set_info($_peso, $_ingredients)
     {
         $this->peso = $_peso;
-        $this->ingradients = $_ingredients;
+        $this->ingredients = $_ingredients;
     }
 }

@@ -2,8 +2,8 @@
 
 class Toy extends Product
 {
-    private $features;
-    private $dimension;
+    public $features;
+    public $dimension;
 
     public function __construct(string $_name, int $_price, string $_category, string $_features, string $_dimension)
     {
