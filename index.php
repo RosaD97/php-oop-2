@@ -2,22 +2,24 @@
 require_once __DIR__ . '/Models/Product.php';
 require_once __DIR__ . '/Models/Food.php';
 require_once __DIR__ . '/Models/Accessory.php';
+require_once __DIR__ . '/Models/Toy.php';
+
 
 
 
 // Food
-$royal_canin = new Food('Royal Canin Mini Adult', '43,99', 'Cane', '545', 'prosciutto, riso');
-$almo_nature = new Food('Almo Nature Holistic Maintenance Medium Large Tonno e Riso', '44,99', 'Cane', '600', 'manzo, cereali');
-$almo_nature_cat = new Food('Almo Nature Cat Daily Lattina', '34,99', 'Gatto', '400', 'tonno, pollo, prosciutto');
-$mangime_pesci = new Food('Mangime per Pesci Guppy in Fiocchi', '2,95', 'Pesce', '30', 'Pesci e sottoprodotti dei pesci, Cereali, Lieviti, Alghe');
+$royal_canin = new Food('Royal Canin Mini Adult', 43.99, 'Cane', 545, 'prosciutto, riso');
+$almo_nature = new Food('Almo Nature Holistic Maintenance Medium Large Tonno e Riso', 44.99, 'Cane', 600, 'manzo, cereali');
+$almo_nature_cat = new Food('Almo Nature Cat Daily Lattina', 34.99, 'Gatto', 400, 'tonno, pollo, prosciutto');
+$mangime_pesci = new Food('Mangime per Pesci Guppy in Fiocchi', 2.95, 'Pesce', 30, 'Pesci e sottoprodotti dei pesci, Cereali, Lieviti, Alghe');
 
 // Accessory
-$voliera = new Accessory('Voliera Wilma in Legno', '184,99', 'Uccello', 'Legno', 'M: L83 x P 67 x H 153 cm');
-$cartucce = new Accessory('Cartucce Filtranti per Filtro EasyCrystal', '2,29', 'Pesce', 'Materiale espanso', 'ND');
+$voliera = new Accessory('Voliera Wilma in Legno', 18.499, 'Uccello', 'Legno', 'M: L83 x P 67 x H 153 cm');
+$cartucce = new Accessory('Cartucce Filtranti per Filtro EasyCrystal', 2.29, 'Pesce', 'Materiale espanso', 'ND');
 
-// Game
-$kong = new Accessory('Kong Classic', '13,49', 'Cane', 'Galleggia e rimbalza', '8,5 cm x 10 cm');
-$topini = new Accessory('Topini di peluche Trixie', '4,99', 'Gatto', 'Morbido con la codina in corda', '8,5 cm x 10 cm');
+// Toy
+$kong = new Toy('Kong Classic', 13.49, 'Cane', 'Galleggia e rimbalza', '8,5 cm x 10 cm');
+$topini = new Toy('Topini di peluche Trixie', 4.99, 'Gatto', 'Morbido con la codina in corda', '8,5 cm x 10 cm');
 
 
 var_dump($royal_canin, $almo_nature, $almo_nature_cat, $mangime_pesci);
