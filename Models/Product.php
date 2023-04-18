@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__. '/../Traits/Name.php';
+
 /**
  * Prodotto
  * 
@@ -30,7 +31,7 @@ class Product
         $this->id = $_id;
         $this->img = $_img;
         $this->name = $_name;
-        $this->price = $_price;
+        $this->set_price($_price);
         $this->category = $_category;
     }
 
@@ -62,6 +63,9 @@ class Product
     }
     public function set_price($_price)
     {
+        if ($_price == 0){
+            throw new Exception('Non puoi mettere zerooo');
+        }
         $this->price = $_price;
     }
 
